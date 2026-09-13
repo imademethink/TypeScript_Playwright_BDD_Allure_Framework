@@ -1,0 +1,24 @@
+{
+  "name": "typescript-playwright-bdd-allure-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beginner-friendly TypeScript Playwright BDD Allure automation framework",
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:smoke": "bddgen --tags \"@smoke\" && playwright test",
+    "test:regression": "bddgen --tags \"@regression\" && playwright test",
+    "test:chrome": "bddgen && playwright test --project=chrome",
+    "test:headed": "bddgen && playwright test --headed",
+    "clean": "node scripts/clean.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.0",
+    "@types/node": "24.3.0",
+    "allure": "3.17.0",
+    "allure-playwright": "3.12.1",
+    "playwright-bdd": "^9.2.1",
+    "typescript": "5.9.2"
+  }
+}
