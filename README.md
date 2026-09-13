@@ -13,8 +13,8 @@ This repository provides a simple and beginner-friendly **TypeScript Playwright 
 
 - 🟦 TypeScript
 - 🌐 Playwright
-- 🥒 BDD / Gherkin
-- 🧩 `playwright-bdd`
+- 🥒 BDD (bddgen) / Gherkin
+- 🧩 playwright-bdd
 - 📊 Allure Reporting
 - 🧱 Page Object Model
 - ⚙️ Playwright Configuration
@@ -44,8 +44,8 @@ It is suitable for:
 
 - 🟦 TypeScript
 - 🌐 Playwright
-- 🥒 BDD using Gherkin
-- 🧩 `playwright-bdd`
+- 🥒 BDD (bddgen) using Gherkin
+- 🧩 playwright-bdd
 - 📝 Feature Files
 - 🧱 Simple Page Object Model
 - 📊 Allure Reporting
@@ -180,13 +180,13 @@ Reports can provide:
 Generate the HTML report with:
 
 ```bash
-npm run allure:generate
+allure generate path\to\allure-results -o allure-report --clean
 ```
 
 Open the report with:
 
 ```bash
-npm run allure:open
+allure open allure-report
 ```
 
 ---
@@ -443,7 +443,7 @@ allure --version
 ## 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/imademethink/TypeScript_Playwright_BDD_Allure_Framework.git
 ```
 
 ## 2. Navigate to the Project
@@ -455,7 +455,7 @@ cd TypeScript_Playwright_BDD_Allure_Framework
 ## 3. Install Dependencies
 
 ```bash
-npm install
+npm install --verbose
 ```
 
 ## 4. Install Playwright Browsers
@@ -529,7 +529,7 @@ npm run bddgen
 ## Generate HTML Report
 
 ```bash
-npm run allure:generate
+allure generate path\to\allure-results -o allure-report --clean
 ```
 
 ## Open Existing HTML Report
@@ -541,21 +541,15 @@ npm run allure:open
 ## Serve Allure Results Directly
 
 ```bash
-npm run allure:serve
-```
-
-## Clean Test Artifacts
-
-```bash
-npm run clean
+allure open allure-report
 ```
 
 A typical reporting flow is:
 
 ```bash
 npm test
-npm run allure:generate
-npm run allure:open
+allure generate path\to\allure-results -o allure-report --clean
+allure open allure-report
 ```
 
 ---
@@ -619,9 +613,9 @@ Current framework settings include:
 
 ```text
 Timeout       : 30 seconds
-Workers       : 1
+Workers       : 2
 Parallel      : Disabled
-Retries       : 0
+Retries       : 1
 Headless      : false
 Screenshot    : Only on failure
 Video         : Retain on failure
@@ -640,7 +634,7 @@ This repository demonstrates:
 - Playwright
 - BDD automation
 - Gherkin
-- `playwright-bdd`
+- playwright-bdd
 - Page Object Model
 - Step Definitions
 - Playwright configuration
@@ -753,10 +747,8 @@ Just a clean and practical automation architecture that teams can understand, ma
 | Run regression tests | `npm run test:regression` |
 | Run Chrome tests | `npm run test:chrome` |
 | Run headed tests | `npm run test:headed` |
-| Generate Allure report | `npm run allure:generate` |
-| Open Allure report | `npm run allure:open` |
-| Serve Allure results | `npm run allure:serve` |
-| Clean test artifacts | `npm run clean` |
+| Generate Allure report | `allure generate path\to\allure-results -o allure-report --clean` |
+| Open Allure report | `allure open allure-report` |
 
 ---
 
