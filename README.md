@@ -35,7 +35,6 @@ It is suitable for:
 - Beginners learning TypeScript automation
 - Beginners learning Playwright
 - Beginners learning BDD
-- Teams migrating from Python Playwright to TypeScript Playwright
 - Enterprise UI automation projects
 
 ---
@@ -664,7 +663,6 @@ This framework can be used by:
 - Test Automation Leads
 - QA Managers
 - Teams building BDD automation frameworks
-- Teams migrating from Python Playwright to TypeScript Playwright
 
 ---
 
