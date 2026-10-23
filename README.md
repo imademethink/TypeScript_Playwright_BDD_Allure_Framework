@@ -85,6 +85,100 @@ The goal is:
 
 ---
 
+
+# 🚀 Getting Started
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/imademethink/TypeScript_Playwright_BDD_Allure_Framework.git
+```
+
+## 2. Navigate to the Project
+
+```bash
+cd TypeScript_Playwright_BDD_Allure_Framework
+```
+
+## 3. Install Dependencies
+
+```bash
+npm install --verbose
+```
+
+## 4. Install Playwright Browsers
+
+```bash
+npx playwright install
+```
+
+For Linux CI environments:
+
+```bash
+npx playwright install --with-deps
+```
+
+---
+
+# 🧪 Test Execution
+
+## Run Specific Test with a specific tag
+
+```bash
+npm run test:smoke
+```
+
+## Run All Tests
+
+```bash
+npm run test
+```
+
+## Generate Allure (HTML) report
+
+```bash
+allure generate allure-results -o allure-report --clean
+```
+
+## Open Allure (HTML) report
+
+```bash
+allure open allure-report
+```
+
+---
+
+## Run Regression Tests
+
+```bash
+npm run test:regression
+```
+
+---
+
+## Run Chrome Tests
+
+```bash
+npm run test:chrome
+```
+
+---
+
+## Run Tests in Headed Mode
+
+```bash
+npm run test:headed
+```
+
+---
+
+## Generate BDD Tests Only
+
+```bash
+npm run bddgen
+```
+
+
 # 🥒 BDD with Gherkin
 
 BDD allows business-readable scenarios to be written using Gherkin syntax.
@@ -175,19 +269,6 @@ Reports can provide:
 - Videos
 - Playwright traces
 - Test attachments
-
-Generate the HTML report with:
-
-```bash
-allure generate path\to\allure-results -o allure-report --clean
-```
-
-Open the report with:
-
-```bash
-allure open allure-report
-```
-
 ---
 
 # 📸 Screenshot on Failure
@@ -256,11 +337,6 @@ Run Chrome tests:
 npm run test:chrome
 ```
 
-Run all configured browsers:
-
-```bash
-npm test
-```
 
 ---
 
@@ -400,155 +476,6 @@ TypeScript_Playwright_BDD_Allure_Framework/
                  │ Screenshots / Video  │
                  │       / Trace        │
                  └──────────────────────┘
-```
-
----
-
-# 💻 Prerequisites
-
-Install the following before running the framework:
-
-- Node.js LTS
-- npm
-- Git
-- Google Chrome (for Chrome execution)
-- Microsoft Edge (for Edge execution)
-- VS Code or another TypeScript IDE
-- Java/JDK if using the Allure CLI installation method that requires it
-- Allure Commandline
-
-Check Node.js:
-
-```bash
-node --version
-```
-
-Check npm:
-
-```bash
-npm --version
-```
-
-Check Allure:
-
-```bash
-allure --version
-```
-
----
-
-# 🚀 Getting Started
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/imademethink/TypeScript_Playwright_BDD_Allure_Framework.git
-```
-
-## 2. Navigate to the Project
-
-```bash
-cd TypeScript_Playwright_BDD_Allure_Framework
-```
-
-## 3. Install Dependencies
-
-```bash
-npm install --verbose
-```
-
-## 4. Install Playwright Browsers
-
-```bash
-npx playwright install
-```
-
-For Linux CI environments, you may use:
-
-```bash
-npx playwright install --with-deps
-```
-
-## 5. TypeScript Validation
-
-```bash
-npm run typecheck
-```
-
----
-
-# 🧪 Test Execution
-
-## Run All Tests
-
-```bash
-npm test
-```
-
-This command:
-
-1. Generates Playwright tests from the feature files.
-2. Executes the generated tests.
-3. Produces Allure results.
-
-## Run Smoke Tests
-
-```bash
-npm run test:smoke
-```
-
-## Run Regression Tests
-
-```bash
-npm run test:regression
-```
-
-## Run Chrome Tests
-
-```bash
-npm run test:chrome
-```
-
-## Run Tests in Headed Mode
-
-```bash
-npm run test:headed
-```
-
-## Generate BDD Tests Only
-
-```bash
-npm run bddgen
-```
-
----
-
-# 📊 Allure Report Commands
-
-## Generate HTML Report
-
-```bash
-allure generate path\to\allure-results -o allure-report --clean
-```
-
-## Open Existing HTML Report
-
-```bash
-npm run allure:open
-```
-
-## Serve Allure Results Directly
-
-```bash
-allure open allure-report
-```
-
-A typical reporting flow is:
-
-```bash
-npm test
-allure generate path\to\allure-results -o allure-report --clean
-allure open allure-report
 ```
 
 ---
