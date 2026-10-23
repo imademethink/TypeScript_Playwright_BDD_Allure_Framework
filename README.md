@@ -92,6 +92,37 @@ The goal is:
 
 ---
 
+---
+
+# 💻 Prerequisites
+
+Install the following before running the framework:
+
+- Node.js LTS
+- npm
+- Git
+- Google Chrome
+- VS Code or another JavaScript IDE
+- Allure Commandline
+
+Check Node.js:
+
+```bash
+node --version
+```
+
+Check npm:
+
+```bash
+npm --version
+```
+
+Check Allure:
+
+```bash
+allure --version
+```
+
 
 # 🚀 Getting Started
 
