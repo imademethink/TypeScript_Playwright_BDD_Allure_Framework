@@ -5,7 +5,7 @@
 
 # YouTube Video Link
 
-# https://youtu.be/Gd_KCFu8hBI
+# https://youtu.be/W-HEQ-ss3iw
 
 
 Build reliable, maintainable, and reusable UI automation using **TypeScript, Playwright, BDD, Gherkin, and Allure Reporting**.
