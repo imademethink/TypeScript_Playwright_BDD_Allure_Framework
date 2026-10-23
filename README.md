@@ -1,6 +1,13 @@
 # 🚀 TypeScript Playwright BDD Allure Reporting Automation Framework
 ### Beginner-Friendly TypeScript Playwright BDD Automation Framework
 
+<img width="1672" height="941" alt="Ready To Use Automation Framework TypeScript, Playwright, BDDgen" src="https://github.com/user-attachments/assets/3e93a299-765b-4230-8ec3-2d6242c82c1a" />
+
+# YouTube Video Link
+
+# https://youtu.be/Gd_KCFu8hBI
+
+
 Build reliable, maintainable, and reusable UI automation using **TypeScript, Playwright, BDD, Gherkin, and Allure Reporting**.
 
 ⭐ If this project helps you, please consider giving it a Star!
